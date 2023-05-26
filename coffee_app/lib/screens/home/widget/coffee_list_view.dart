@@ -7,14 +7,14 @@ class CoffeeListView extends StatelessWidget {
   final Function callback;
   final PageController pageController;
   final Shop shop;
-  CoffeeListView(this.selected, this.callback, this.pageController, this.shop,
+  const CoffeeListView(this.selected, this.callback, this.pageController, this.shop,
       {super.key});
 
   @override
   Widget build(BuildContext context) {
     final category = shop.menu.keys.toList();
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: PageView(
           controller: pageController,
           onPageChanged: (index) => callback(index),
@@ -23,7 +23,7 @@ class CoffeeListView extends StatelessWidget {
                   padding: EdgeInsets.zero,
                   itemBuilder: (context, index) =>
                       CoffeeItem(shop.menu[category[selected]]![index]),
-                  separatorBuilder: (_, index) => SizedBox(height: 15),
+                  separatorBuilder: (_, index) => const SizedBox(height: 15),
                   itemCount: shop.menu[category[selected]]!.length))
               .toList()),
     );

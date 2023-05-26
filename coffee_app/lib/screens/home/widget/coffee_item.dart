@@ -16,13 +16,13 @@ class CoffeeItem extends StatelessWidget {
       child: Row(
         children: [
           Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               width: 110,
               height: 110,
               child: Image.asset(coffee.imgUrl, fit: BoxFit.fitHeight)),
           Expanded(
               child: Container(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               top: 20,
               bottom: 10,
               right: 10,
@@ -35,18 +35,18 @@ class CoffeeItem extends StatelessWidget {
                   children: [
                     Text(
                       coffee.name,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                           height: 1.5),
                     ),
-                    Icon(Icons.arrow_forward_ios_outlined, size: 15)
+                    const Icon(Icons.arrow_forward_ios_outlined, size: 15)
                   ],
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Row(
                   children: [
-                    Text(
+                    const Text(
                       '\$',
                       style:
                           TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
@@ -54,7 +54,7 @@ class CoffeeItem extends StatelessWidget {
                     Text(
                       '${coffee.price}',
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

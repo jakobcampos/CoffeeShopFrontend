@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar(
+          const CustomAppBar(
             Icons.account_circle_outlined,
             Icons.search_outlined,
           ),
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
           ),
           // DOTS SELECTORS
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 45),
+            padding: const EdgeInsets.symmetric(horizontal: 45),
             height: 60,
             child: Center(
               child: SmoothPageIndicator(
@@ -79,7 +79,8 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {},
         backgroundColor: kPrimaryColor,
         elevation: 2,
-        child: Icon(Icons.shopping_bag_outlined, color: Colors.black, size: 30),
+        child: const Icon(Icons.shopping_bag_outlined,
+            color: Colors.black, size: 30),
       ),
     );
   }
