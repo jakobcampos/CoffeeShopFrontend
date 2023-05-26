@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                       height: 10,
                       color: kBackground,
                       borderRadius: BorderRadius.circular(10),
-                      dotBorder: DotBorder(
+                      dotBorder: const DotBorder(
                         color: kPrimaryColor,
                         padding: 2,
                         width: 2,
