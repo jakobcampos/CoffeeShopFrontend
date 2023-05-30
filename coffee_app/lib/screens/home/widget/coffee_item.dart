@@ -17,8 +17,8 @@ class CoffeeItem extends StatelessWidget {
         children: [
           Container(
               padding: const EdgeInsets.all(5),
-              width: 110,
-              height: 110,
+              width: 70,
+              height: 70,
               child: Image.asset(coffee.imgUrl, fit: BoxFit.fitHeight)),
           Expanded(
               child: Container(
@@ -53,8 +53,8 @@ class CoffeeItem extends StatelessWidget {
                     ),
                     Text(
                       '${coffee.price}',
-                      style:
-                          const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
