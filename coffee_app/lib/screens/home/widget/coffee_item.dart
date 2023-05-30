@@ -15,52 +15,40 @@ class CoffeeItem extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Container(
-              padding: const EdgeInsets.all(5),
+          Padding(
+            padding: const EdgeInsets.all(5),
+            child: Image.asset(
+              coffee.imgUrl,
+              fit: BoxFit.fitHeight,
               width: 70,
               height: 70,
-              child: Image.asset(coffee.imgUrl, fit: BoxFit.fitHeight)),
+            ),
+          ),
           Expanded(
-              child: Container(
-            padding: const EdgeInsets.only(
-              top: 20,
-              bottom: 10,
-              right: 10,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      coffee.name,
-                      style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          height: 1.5),
-                    ),
-                    const Icon(Icons.arrow_forward_ios_outlined, size: 15)
-                  ],
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Text(
+                  coffee.name,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 5),
-                Row(
-                  children: [
-                    const Text(
-                      '\$',
-                      style:
-                          TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      '${coffee.price}',
-                      style: const TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-              ],
+              ),
             ),
-          ))
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Icon(Icons.favorite_outline, size: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Icon(Icons.add, size: 20),
+          ),
         ],
       ),
     );

@@ -9,7 +9,7 @@ class Shop {
       {
         'Recommend': Coffee.generateRecommendCoffees(),
         'Popular': Coffee.generatePopularCoffees(),
-        'Cold Coffees': [],
+        'Cold Coffees': Coffee.generateColdCoffees(),
         'Hot Coffees': [],
       },
     );

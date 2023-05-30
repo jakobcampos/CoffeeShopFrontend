@@ -75,4 +75,38 @@ class Coffee {
       ]),
     ];
   }
+
+  static List<Coffee> generateColdCoffees() {
+    return [
+      Coffee(
+          'assets/images/iced-coffee.png',
+          'Iced Latte',
+          '175 kcal',
+          5.5,
+          1,
+          [
+            {'Milk': 'assets/images/milk.png'},
+            {'Beans': 'assets/images/coffee-beans.png'},
+            {'Ice': 'assets/images/ice.png'},
+          ],
+          hightLight: true),
+      Coffee('assets/images/iced-coffee.png', 'Iced Americano', '15 kcal', 3.0,
+          1, [
+        {'Water': 'assets/images/water.png'},
+        {'Beans': 'assets/images/coffee-beans.png'},
+        {'Ice': 'assets/images/ice.png'},
+      ]),
+      Coffee(
+          'assets/images/iced-coffee.png',
+          'Iced Mocha Frapaccino Macha Latte Machiato Frap Biscuit Sauce',
+          '310 kcal',
+          6.0,
+          1, [
+        {'Milk': 'assets/images/milk.png'},
+        {'Chocolate': 'assets/images/chocolate.png'},
+        {'Beans': 'assets/images/coffee-beans.png'},
+        {'Ice': 'assets/images/ice.png'},
+      ]),
+    ];
+  }
 }
