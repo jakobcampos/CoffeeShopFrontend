@@ -41,12 +41,12 @@ class CoffeeItem extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
+          const Padding(
+            padding: EdgeInsets.only(right: 10),
             child: Icon(Icons.favorite_outline, size: 20),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
+          const Padding(
+            padding: EdgeInsets.only(right: 10),
             child: Icon(Icons.add, size: 20),
           ),
         ],
